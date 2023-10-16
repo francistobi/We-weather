@@ -22,21 +22,22 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 }
+
 .search input {
   border: 0;
   height: 60px;
   outline: 0;
   background: #ebfffc;
   color: #555;
-  padding: 10px 25px;
+  padding: 10px;
   border-radius: 30px;
   flex: 1;
-  font-size: 18px;
-  margin-right: 16px;
+  font-size: 1rem;
+  margin-right: 1rem; 
 }
-.search button{
+
+.search button {
   border: 0;
   outline: 0;
   background: #ebfffc;
@@ -45,6 +46,19 @@ body {
   height: 60px;
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .search input {
+    font-size: 0.8rem; 
+    margin-right: 0.5rem; 
+  }
+  
+  .search button {
+    width: 40px; 
+    height: 40px;
+  }
+}
+
 .search button img{
   width: 16px;
 }
@@ -104,4 +118,33 @@ body {
     border-radius: 4px;
     color: #007BFF;
     text-decoration: none;
-}
+  }
+
+  /* .search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+  }
+  .search input {
+    border: 0;
+    height: 60px;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    border-radius: 30px;
+    flex: 1;
+    font-size: 18px;
+    margin-right: 16px;
+  }
+  .search button{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+  } */
